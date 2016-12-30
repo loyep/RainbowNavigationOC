@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12767C451C33AEA100193645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12767C441C33AEA100193645 /* AppDelegate.swift */; };
+		12767C4A1C33AEA100193645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12767C481C33AEA100193645 /* Main.storyboard */; };
+		12767C4C1C33AEA200193645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12767C4B1C33AEA200193645 /* Assets.xcassets */; };
+		12767C4F1C33AEA200193645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12767C4D1C33AEA200193645 /* LaunchScreen.storyboard */; };
+		12767C751C33B3AA00193645 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12767C741C33B3AA00193645 /* MainTableViewController.swift */; };
+		12767C771C33B3B300193645 /* ColorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12767C761C33B3B300193645 /* ColorTableViewController.swift */; };
+		12767C791C33B3BE00193645 /* TransparentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12767C781C33B3BE00193645 /* TransparentTableViewController.swift */; };
+		FDA9D74A1E163A2E00546C3A /* RainbowDragPop.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA9D7411E163A2E00546C3A /* RainbowDragPop.m */; };
+		FDA9D74B1E163A2E00546C3A /* RainbowPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA9D7431E163A2E00546C3A /* RainbowPopAnimator.m */; };
+		FDA9D74C1E163A2E00546C3A /* RainbowPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA9D7451E163A2E00546C3A /* RainbowPushAnimator.m */; };
+		FDA9D74D1E163A2E00546C3A /* RainbowNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA9D7471E163A2E00546C3A /* RainbowNavigation.m */; };
+		FDA9D74E1E163A2E00546C3A /* UINavigationBar+Rainbow.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA9D7491E163A2E00546C3A /* UINavigationBar+Rainbow.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12767C671C33AEB200193645 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12767C411C33AEA100193645 /* RainbowNavigationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainbowNavigationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12767C441C33AEA100193645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12767C491C33AEA100193645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12767C4B1C33AEA200193645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12767C4E1C33AEA200193645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12767C501C33AEA200193645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12767C741C33B3AA00193645 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		12767C761C33B3B300193645 /* ColorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTableViewController.swift; sourceTree = "<group>"; };
+		12767C781C33B3BE00193645 /* TransparentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentTableViewController.swift; sourceTree = "<group>"; };
+		FDA9D6FF1E16132E00546C3A /* RainbowNavigationSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RainbowNavigationSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		FDA9D73F1E163A2E00546C3A /* RainbowColorSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainbowColorSource.h; sourceTree = "<group>"; };
+		FDA9D7401E163A2E00546C3A /* RainbowDragPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainbowDragPop.h; sourceTree = "<group>"; };
+		FDA9D7411E163A2E00546C3A /* RainbowDragPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainbowDragPop.m; sourceTree = "<group>"; };
+		FDA9D7421E163A2E00546C3A /* RainbowPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainbowPopAnimator.h; sourceTree = "<group>"; };
+		FDA9D7431E163A2E00546C3A /* RainbowPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainbowPopAnimator.m; sourceTree = "<group>"; };
+		FDA9D7441E163A2E00546C3A /* RainbowPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainbowPushAnimator.h; sourceTree = "<group>"; };
+		FDA9D7451E163A2E00546C3A /* RainbowPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainbowPushAnimator.m; sourceTree = "<group>"; };
+		FDA9D7461E163A2E00546C3A /* RainbowNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainbowNavigation.h; sourceTree = "<group>"; };
+		FDA9D7471E163A2E00546C3A /* RainbowNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainbowNavigation.m; sourceTree = "<group>"; };
+		FDA9D7481E163A2E00546C3A /* UINavigationBar+Rainbow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Rainbow.h"; sourceTree = "<group>"; };
+		FDA9D7491E163A2E00546C3A /* UINavigationBar+Rainbow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Rainbow.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12767C3E1C33AEA100193645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12767C381C33AEA100193645 = {
+			isa = PBXGroup;
+			children = (
+				12767C421C33AEA100193645 /* Products */,
+				12767C431C33AEA100193645 /* RainbowNavigationSample */,
+			);
+			sourceTree = "<group>";
+		};
+		12767C421C33AEA100193645 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12767C411C33AEA100193645 /* RainbowNavigationSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12767C431C33AEA100193645 /* RainbowNavigationSample */ = {
+			isa = PBXGroup;
+			children = (
+				FDA9D73E1E163A2E00546C3A /* RainbowNavigation */,
+				12767C441C33AEA100193645 /* AppDelegate.swift */,
+				12767C4B1C33AEA200193645 /* Assets.xcassets */,
+				12767C761C33B3B300193645 /* ColorTableViewController.swift */,
+				12767C501C33AEA200193645 /* Info.plist */,
+				12767C4D1C33AEA200193645 /* LaunchScreen.storyboard */,
+				12767C481C33AEA100193645 /* Main.storyboard */,
+				12767C741C33B3AA00193645 /* MainTableViewController.swift */,
+				FDA9D6FF1E16132E00546C3A /* RainbowNavigationSample-Bridging-Header.h */,
+				12767C781C33B3BE00193645 /* TransparentTableViewController.swift */,
+			);
+			path = RainbowNavigationSample;
+			sourceTree = "<group>";
+		};
+		FDA9D73E1E163A2E00546C3A /* RainbowNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				FDA9D73F1E163A2E00546C3A /* RainbowColorSource.h */,
+				FDA9D7401E163A2E00546C3A /* RainbowDragPop.h */,
+				FDA9D7411E163A2E00546C3A /* RainbowDragPop.m */,
+				FDA9D7461E163A2E00546C3A /* RainbowNavigation.h */,
+				FDA9D7471E163A2E00546C3A /* RainbowNavigation.m */,
+				FDA9D7421E163A2E00546C3A /* RainbowPopAnimator.h */,
+				FDA9D7431E163A2E00546C3A /* RainbowPopAnimator.m */,
+				FDA9D7441E163A2E00546C3A /* RainbowPushAnimator.h */,
+				FDA9D7451E163A2E00546C3A /* RainbowPushAnimator.m */,
+				FDA9D7481E163A2E00546C3A /* UINavigationBar+Rainbow.h */,
+				FDA9D7491E163A2E00546C3A /* UINavigationBar+Rainbow.m */,
+			);
+			path = RainbowNavigation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12767C401C33AEA100193645 /* RainbowNavigationSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12767C531C33AEA200193645 /* Build configuration list for PBXNativeTarget "RainbowNavigationSample" */;
+			buildPhases = (
+				12767C3D1C33AEA100193645 /* Sources */,
+				12767C3E1C33AEA100193645 /* Frameworks */,
+				12767C3F1C33AEA100193645 /* Resources */,
+				12767C671C33AEB200193645 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RainbowNavigationSample;
+			productName = RainbowNavigationSample;
+			productReference = 12767C411C33AEA100193645 /* RainbowNavigationSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12767C391C33AEA100193645 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = danis;
+				TargetAttributes = {
+					12767C401C33AEA100193645 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = D65DK9X9W4;
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = 12767C3C1C33AEA100193645 /* Build configuration list for PBXProject "RainbowNavigationSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12767C381C33AEA100193645;
+			productRefGroup = 12767C421C33AEA100193645 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12767C401C33AEA100193645 /* RainbowNavigationSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12767C3F1C33AEA100193645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12767C4F1C33AEA200193645 /* LaunchScreen.storyboard in Resources */,
+				12767C4C1C33AEA200193645 /* Assets.xcassets in Resources */,
+				12767C4A1C33AEA100193645 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12767C3D1C33AEA100193645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA9D74A1E163A2E00546C3A /* RainbowDragPop.m in Sources */,
+				FDA9D74B1E163A2E00546C3A /* RainbowPopAnimator.m in Sources */,
+				12767C791C33B3BE00193645 /* TransparentTableViewController.swift in Sources */,
+				FDA9D74E1E163A2E00546C3A /* UINavigationBar+Rainbow.m in Sources */,
+				12767C751C33B3AA00193645 /* MainTableViewController.swift in Sources */,
+				FDA9D74D1E163A2E00546C3A /* RainbowNavigation.m in Sources */,
+				FDA9D74C1E163A2E00546C3A /* RainbowPushAnimator.m in Sources */,
+				12767C771C33B3B300193645 /* ColorTableViewController.swift in Sources */,
+				12767C451C33AEA100193645 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		12767C481C33AEA100193645 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12767C491C33AEA100193645 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		12767C4D1C33AEA200193645 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12767C4E1C33AEA200193645 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12767C511C33AEA200193645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12767C521C33AEA200193645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12767C541C33AEA200193645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = RainbowNavigationSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danisme.RainbowNavigationSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RainbowNavigationSample/RainbowNavigationSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		12767C551C33AEA200193645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = RainbowNavigationSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danisme.RainbowNavigationSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RainbowNavigationSample/RainbowNavigationSample-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12767C3C1C33AEA100193645 /* Build configuration list for PBXProject "RainbowNavigationSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12767C511C33AEA200193645 /* Debug */,
+				12767C521C33AEA200193645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12767C531C33AEA200193645 /* Build configuration list for PBXNativeTarget "RainbowNavigationSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12767C541C33AEA200193645 /* Debug */,
+				12767C551C33AEA200193645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12767C391C33AEA100193645 /* Project object */;
+}
