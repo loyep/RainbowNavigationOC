@@ -23,7 +23,8 @@ NSString *const kStatusBarMaskKey = @"kStatusBarMaskKey";
 
 - (void)df_setStatusBarMaskColor:(UIColor *)color {
     if (self.statusBarMask == nil) {
-        self.statusBarMask = [[UIView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, 20)];
+        CGFloat statusHeight = [UIApplication sharedApplication].statusBarHidden ? 0 : [UIApplication sharedApplication].statusBarFrame.size.height;
+        self.statusBarMask = [[UIView alloc] initWithFrame:CGRectMake(0, -statusHeight, [UIScreen mainScreen].bounds.size.width, statusHeight)];
         self.statusBarMask.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         UIView *tempBackgroundView = self.backgroundView;
         if (tempBackgroundView) {
@@ -40,8 +41,8 @@ NSString *const kStatusBarMaskKey = @"kStatusBarMaskKey";
         [self setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
         
         self.shadowImage = [[UIImage alloc] init];
-        self.backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, 64)];
-        
+        CGFloat statusHeight = [UIApplication sharedApplication].statusBarHidden ? 0 : [UIApplication sharedApplication].statusBarFrame.size.height;
+        self.backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, -statusHeight, [UIScreen mainScreen].bounds.size.width, statusHeight + self.frame.size.height)];
         self.backgroundView.userInteractionEnabled = false;
         self.backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
