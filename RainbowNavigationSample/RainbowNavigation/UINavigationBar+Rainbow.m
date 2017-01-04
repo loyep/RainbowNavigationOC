@@ -21,7 +21,7 @@ NSString *const kStatusBarMaskKey = @"kStatusBarMaskKey";
 
 @implementation UINavigationBar (Rainbow)
 
-- (void)df_setStatusBarMaskColor:(UIColor *)color {
+- (void)setDfStatusBarMaskColor:(UIColor *)dfStatusBarMaskColor {
     if (self.statusBarMask == nil) {
         CGFloat statusHeight = [UIApplication sharedApplication].statusBarHidden ? 0 : [UIApplication sharedApplication].statusBarFrame.size.height;
         self.statusBarMask = [[UIView alloc] initWithFrame:CGRectMake(0, -statusHeight, [UIScreen mainScreen].bounds.size.width, statusHeight)];
@@ -33,10 +33,11 @@ NSString *const kStatusBarMaskKey = @"kStatusBarMaskKey";
             [self insertSubview:self.statusBarMask atIndex:0];
         }
     }
-    self.statusBarMask.backgroundColor = color;
+    self.statusBarMask.backgroundColor = dfStatusBarMaskColor;
 }
 
-- (void)df_setBackgroundColor:(UIColor *)color {
+
+- (void)setDfBackgroundColor:(UIColor *)dfBackgroundColor {
     if (nil == self.backgroundView) {
         [self setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
         
@@ -48,7 +49,21 @@ NSString *const kStatusBarMaskKey = @"kStatusBarMaskKey";
         
         [self insertSubview:self.backgroundView atIndex:0];
     }
-    self.backgroundView.backgroundColor = color;
+    self.backgroundView.backgroundColor = dfBackgroundColor;
+}
+
+- (UIColor *)dfBackgroundColor {
+    if (self.backgroundView) {
+        return self.backgroundView.backgroundColor;
+    }
+    return nil;
+}
+
+- (UIColor *)dfStatusBarMaskColor {
+    if (self.statusBarMask) {
+        return self.statusBarMask.backgroundColor;
+    }
+    return nil;
 }
 
 - (void)df_reset {

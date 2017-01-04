@@ -10,9 +10,9 @@
 
 @interface UINavigationBar (Rainbow)
 
-- (void)df_setStatusBarMaskColor:(UIColor *)color;
+@property (nonatomic, strong) UIColor *dfStatusBarMaskColor;
 
-- (void)df_setBackgroundColor:(UIColor *)color;
+@property (nonatomic, strong) UIColor *dfBackgroundColor;
 
 - (void)df_reset;
 
